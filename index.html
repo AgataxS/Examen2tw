@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Pacientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UPDS</h1>
+            <h2>BASE DE DATOS</h2>
+            <h3>REGISTRO DE PACIENTES</h3>
+        </header>
+        <form action="registro.php" method="post">
+            <h2>Datos de filiación</h2>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label>Segundo Nombre</label>
+                <input type="text" name="segundo_nombre">
+            </div>
+            <div class="form-group">
+                <label>Apellidos</label>
+                <input type="text" name="apellidos" required>
+            </div>
+            
+            <h3>Representante</h3>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" name="representante_nombre">
+            </div>
+            <div class="form-group">
+                <label>Apellido</label>
+                <input type="text" name="representante_apellido">
+            </div>
+            <div class="form-group">
+                <label>Parentesco</label>
+                <input type="text" name="parentesco">
+            </div>
+            
+            <h3>Contacto Telefónico</h3>
+            <div class="form-group">
+                <label>Teléfono</label>
+                <input type="text" name="contacto_telefonico" required>
+            </div>
+            
+            <h3>Residencia</h3>
+            <div class="form-group">
+                <label>Dirección de la calle 1</label>
+                <input type="text" name="direccion_calle1">
+            </div>
+            <div class="form-group">
+                <label>Dirección de la calle 2</label>
+                <input type="text" name="direccion_calle2">
+            </div>
+            <div class="form-group">
+                <label>Ciudad</label>
+                <input type="text" name="ciudad">
+            </div>
+            <div class="form-group">
+                <label>Estado / Provincia</label>
+                <input type="text" name="estado_provincia">
+            </div>
+            <div class="form-group">
+                <label>País</label>
+                <input type="text" name="pais" value="Bolivia" readonly>
+            </div>
+            
+            <h3>Historial Nutricional, Desarrollo e Inmunización</h3>
+            <div class="form-group">
+                <label>Alergias</label>
+                <textarea name="alergias"></textarea>
+            </div>
+            
+            <h4>Inmunización</h4>
+            <div class="form-group">
+                <div class="form-column">
+                    <label><input type="checkbox" name="inmunizacion[]" value="Pentavalente (1)"> Pentavalente (1)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Pentavalente (2)"> Pentavalente (2)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Pentavalente (3)"> Pentavalente (3)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="OPV (1)"> OPV (1)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="OPV (2)"> OPV (2)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="OPV (3)"> OPV (3)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="VPH (1)"> VPH (1)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="VPH (2)"> VPH (2)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Hepatitis A (1)"> Hepatitis A (1)</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Hepatitis A (2)"> Hepatitis A (2)</label>
+                </div>
+                <div class="form-column">
+                    <label><input type="checkbox" name="inmunizacion[]" value="BCG"> BCG</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Hepatitis B"> Hepatitis B</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="IPV"> IPV</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="SRP"> SRP</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Varicela"> Varicela</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Fiebre Amarilla"> Fiebre Amarilla</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="DPT"> DPT</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="dT"> dT</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Influenza"> Influenza</label>
+                    <label><input type="checkbox" name="inmunizacion[]" value="Otro"> Otro</label>
+                </div>
+            </div>
+            
+            <h3>Hora de Registro</h3>
+            <div class="form-group">
+                <input type="time" name="hora_registro">
+            </div>
+            
+            <div class="form-buttons">
+                <button type="button" class="btn-back">Atrás</button>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
