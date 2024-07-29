@@ -15,6 +15,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 800px;
+    margin-top: 20px;
 }
 
 header h1, header h2, header h3 {
@@ -44,11 +45,16 @@ h2, h3, h4 {
     margin-top: 20px;
 }
 
-.form-group {
+.form-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex: 1 1 48%;
 }
 
 .form-group label {
@@ -65,16 +71,15 @@ h2, h3, h4 {
     border-radius: 4px;
 }
 
-.form-column {
-    flex: 1;
-    min-width: 45%;
-    margin-bottom: 15px;
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
 }
 
-.form-column label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
+.form-column {
+    flex: 1;
+    min-width: 48%;
+    margin-bottom: 15px;
 }
 
 .form-buttons {
@@ -109,3 +114,10 @@ h2, h3, h4 {
 .btn-submit:hover {
     background-color: #218838;
 }
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+        
